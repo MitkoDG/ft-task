@@ -1,4 +1,5 @@
 import { getData } from "../api/api.js";
+import { handleFetchError } from "./handleFetchError.js";
 
 const link = "https://www.ft.com/";
 
@@ -13,6 +14,10 @@ const names = {
 export const createElement = async () => {
     try {
         const data = await getData();
+        
+        if (!data || !Array.isArray(data)) {
+            throw new Error("Invalid data received");
+        }
 
         const ulEl = document.createElement("ul");
 
