@@ -1,5 +1,4 @@
 import { getData } from "../api/api.js";
-import { handleFetchError } from "./handleFetchError.js";
 
 const link = "https://www.ft.com/";
 
@@ -14,7 +13,8 @@ const names = {
 export const createElement = async () => {
     try {
         const data = await getData();
-        
+
+        console.log(data);
         if (!data || !Array.isArray(data)) {
             throw new Error("Invalid data received");
         }
@@ -52,6 +52,6 @@ export const createElement = async () => {
         return ulEl;
     } catch (err) {
         console.error("Error:", err);
-        return null;
+        // return err;
     }
 };

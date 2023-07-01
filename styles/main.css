@@ -53,6 +53,18 @@ span:last-child {
   color: #808080;
 }
 
+.loading {
+  padding: 10px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.error {
+  color: #f77379;
+  padding: 10px;
+  margin: 0 5px;
+}
+
 @media screen and (max-width: 475px) {
     ul {
       flex-direction: column;
