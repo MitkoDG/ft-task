@@ -15,6 +15,6 @@ export const getData = async () => {
     return response.data.items;
   } catch (err) {
     console.error(err);
-    // return err;
+    return null;
   }
 };

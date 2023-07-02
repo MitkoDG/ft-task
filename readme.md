@@ -22,6 +22,10 @@ Financial Times API
 Clone the repository: git clone https://github.com/MitkoDG/ft-task.git
 Navigate to the project directory: cd ft-task
 
+### Tests
+
+To run the tests, you will need to have Mocha and Chai installed.
+
 ### Contributing
 
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:

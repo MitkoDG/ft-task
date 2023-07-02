@@ -10,7 +10,6 @@ const appendListItems = async () => {
     errorElement.style.display = "none";
 
     const elements = await createElement();
-    console.log(elements);
     if (!elements) {
       throw new Error("Invalid data received");
     }

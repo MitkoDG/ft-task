@@ -25,6 +25,7 @@ export const createElement = async () => {
             const liEl = document.createElement("li");
             const aEl = document.createElement("a");
             aEl.href = link;
+            aEl.setAttribute("target", "_blank");
 
             const spanNameEl = document.createElement("span");
             const spanValueEl = document.createElement("span");
