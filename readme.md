@@ -1,3 +1,5 @@
+![link](https://github.com/MitkoDG/ft-task/blob/main/screenshot.jpg)
+
 # FT Market Data
 
 FT Market Data is a web application that retrieves and displays financial market data from the Financial Times API. It allows users to view the latest information.
