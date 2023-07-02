@@ -12,9 +12,9 @@ Handles API fetch errors and displays appropriate error messages to users.
 
 ### Technologies Used
 
-JavaScript
-HTML
-CSS
+JavaScript,
+HTML,
+CSS,
 Financial Times API
 
 ### Installation
@@ -25,17 +25,6 @@ Navigate to the project directory: cd ft-task
 ### Tests
 
 To run the tests, you will need to have Mocha and Chai installed.
-
-### Contributing
-
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
-
-### Fork the repository
-
-Create a new branch: git checkout -b feature/your-feature-name
-Commit your changes: git commit -am 'Add a new feature'
-Push the branch to your forked repository: git push origin feature/your-feature-name
-Submit a pull request
 
 ### License
 
