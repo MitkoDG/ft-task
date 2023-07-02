@@ -1,4 +1,5 @@
 import { createElement } from "./utils/createElement.js";
+import { showLoading, hideLoading, showError, hideError } from "./utils/display.js";
 
 const container = document.querySelector(".stocks");
 const loadingElement = container.querySelector(".loading");
@@ -6,19 +7,18 @@ const errorElement = container.querySelector(".error");
 
 const appendListItems = async () => {
   try {
-    loadingElement.style.display = "block";
-    errorElement.style.display = "none";
+    showLoading(loadingElement);
+    hideError(errorElement);
 
     const elements = await createElement();
     if (!elements) {
       throw new Error("Invalid data received");
     }
     container.append(elements);
-  } catch (error) {
-    errorElement.textContent = error.message;
-    errorElement.style.display = "block";
+  } catch (err) {
+    showError(errorElement, err.message);
   } finally {
-    loadingElement.style.display = "none";
+    hideLoading(loadingElement);
   }
 };
 

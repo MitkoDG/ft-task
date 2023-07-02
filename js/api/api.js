@@ -1,6 +1,6 @@
 import { handleFetchError } from "../utils/handleFetchError.js";
 
-const link = "https://markets-data-api-proxy.ft.com/research/webservices/securities/v1/quotes?symbols=";
+const link = "https://markets-data-api-proxy.ft.com/research/webservices/securities/v1/quotes?symbols";
 const symbols = "FTSE:FSI,INX:IOM,EURUSD,GBPUSD,IB.1:IEU";
 
 export const getData = async () => {
