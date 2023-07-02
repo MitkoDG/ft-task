@@ -14,7 +14,6 @@ export const createElement = async () => {
     try {
         const data = await getData();
 
-        console.log(data);
         if (!data || !Array.isArray(data)) {
             throw new Error("Invalid data received");
         }
