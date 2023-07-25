@@ -16,8 +16,6 @@ This project addresses the following requirements:
 - Use media queries to make the application responsive and adjust the layout based on different screen sizes.
 - Handle and display error messages to the user in case of API failures or invalid data.
 
-Additionally, the README file contains other relevant information about the project, such as installation instructions, how to run the application, and any other important details.
-
 
 ### Features
 
